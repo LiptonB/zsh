@@ -23,8 +23,6 @@ alias r='git-smart-remote'
 
 alias gl='git log'
 
-alias diff='git diff'
-alias wip='git commit -am "WIP"'
 alias unpushed='git log --branches --not --remotes --no-walk --decorate --oneline'
 
 v() {
@@ -35,8 +33,8 @@ v() {
           done | fzf-tmux -d -m -q "$*" -1) && vim ${files//\~/$HOME}
 }
 # alias v='nvim'
-alias vi='nvim'
-alias vim='nvim'
+alias vi='nvim -p'
+alias vim='nvim -p'
 
 alias py='python'
 alias python='python3'
